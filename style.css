@@ -1,0 +1,209 @@
+/* Pengaturan dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #fff0f6;
+    color: #333;
+}
+
+/* Navbar */
+header {
+    background: #191970;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 28px;
+}
+
+.logo span {
+    color: #ffd1dc;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffd1dc;
+}
+
+/* Home */
+.home {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 8%;
+    gap: 30px;
+}
+
+.home-text h3 {
+    color: #e75480;
+    font-size: 22px;
+}
+
+.home-text h1 {
+    font-size: 42px;
+    margin: 15px 0;
+}
+
+.home-text h1 span,
+.heading span {
+    color: #e75480;
+}
+
+.home-text h2 {
+    margin-bottom: 15px;
+}
+
+.home-text p {
+    line-height: 1.8;
+    max-width: 450px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: #191970;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+.btn:hover {
+    background: #191970;
+}
+
+/* Foto */
+.home-img img {
+    width: 280px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 25px;
+    border: 6px solid white;
+    box-shadow: 0 5px 20px #191970;
+}
+
+/* About */
+.about {
+    padding: 80px 10%;
+    background: white;
+    text-align: center;
+}
+
+.heading {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.about-content {
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    background: #fff0f6;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.about-content h2 {
+    color: #e75480;
+    margin: 20px 0;
+}
+
+.about-content p {
+    line-height: 2;
+}
+
+/* Contact */
+.contact {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.contact-box {
+    background: white;
+    max-width: 500px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px #191970;
+}
+
+.contact-box p {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.contact-box a {
+    color: #E75480;
+    text-decoration: none;
+    word-break: break-word;
+}
+
+.contact-box a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #191970;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Tampilan HP */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .home-text h1 {
+        font-size: 30px;
+    }
+
+    .home-img img {
+        width: 220px;
+        height: 270px;
+    }
+
+    .heading {
+        font-size: 28px;
+    }
+}
